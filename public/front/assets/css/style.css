@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat';
+}
+
+:root {
+    --yellow: #FAD37F;
+}
+
+.bg1 {
+    background: url(../images/home-1.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -90px;
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.bg1-a {
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.bg1-b {
+    letter-spacing: -2.4px;
+    color: #000000;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.bg1-btn {
+    letter-spacing: -0.64px;
+    color: #000000;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 38px;
+    background: var(--yellow);
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 15px;
+    color: #111111;
+}
+
+.bg1-b span {
+    font-weight: 900;
+}
+
+.popup-youtube img {
+    width: 90%;
+}
+
+.home2a-img {
+    width: 88px;
+    height: 88px;
+}
+
+.bg2-a {
+    letter-spacing: -0.32px;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.bg2-b {
+    color: #111111;
+    font-size: 44px;
+    line-height: 44px;
+}
+
+.bg2-c {
+    font-size: 16px;
+    color: #11111180;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.bg2-btn {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    background: var(--yellow);
+    width: 154px;
+    height: 48px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg2 {
+    padding: 50px 0;
+}
+
+.bg2 .container {
+    max-width: 1100px;
+}
+
+.img-boxa {
+    position: relative;
+}
+
+.bg2-b span {
+    font-weight: 900;
+}
+
+.home3-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.bg3-a {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.bg3-b {
+    font-size: 46px;
+    letter-spacing: -2px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bg3-c {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.bg3-d {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.bg3-btn {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-decoration: none;
+    background: var(--yellow);
+    width: 135px;
+    height: 45px;
+    border-radius: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.imgbox-hover {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    padding: 0 10px;
+    opacity: 0;
+}
+
+.img-box {
+    position: relative;
+}
+
+.img-box:hover .imgbox-hover,
+.img-box1:hover .imgbox-hover,
+.img-boxa:hover .imgbox-hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.img-box1 {
+    position: relative;
+    margin-top: 20px;
+}
+
+.transcript-btn {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    width: 280px;
+    height: 60px;
+    border-radius: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--yellow);
+    margin: 20px auto;
+}
+
+.blog-img {
+    height: 300px;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.blog-a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #111111;
+}
+
+.blog-b {
+    font-size: 14px;
+    color: #11111180;
+    margin-top: 10px;
+}
+
+.blog-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    align-items: baseline;
+}
+
+.bg4 {
+    padding: 50px 0;
+}
+
+.bg5-a {
+    font-size: 46px;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.bg5-b {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.bg5 .container {
+    background: url(../images/home5.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 80px 100px;
+    border-radius: 36px;
+}
+
+.email-input {
+    width: 100%;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    border-radius: 51px;
+    padding-left: 20px;
+}
+
+.submit-btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    background: var(--yellow);
+    border: 0;
+    border-radius: 49px;
+    height: 65px;
+    width: 160px;
+    position: absolute;
+    right: 0;
+}
+
+.bg5 form {
+    position: relative;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.signup-btn {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 24px;
+    padding: 15px 50px;
+    background: #F9D27F;
+}
+
+.logo {
+    width: 80%;
+}
+
+.footer-logo {
+    width: 60%;
+}
+
+.footer-p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    width: 90%;
+    text-align: justify;
+}
+
+.social-icons i {
+    background: #000;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-h3 {
+    letter-spacing: -0.64px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.footer-h4 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+footer {
+    background: var(--yellow);
+    padding-top: 80px;
+}
+
+.copyright-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
+
+.row-1 {
+    padding: 15px 0;
+    border-top: 1px solid #000;
+    margin-top: 50px;
+}
+
+.bg5 {
+    margin-bottom: 80px;
+}
+
+.bg1-btn:hover,
+.signup-btn:hover,
+.bg2-btn:hover,
+.bg3-btn:hover,
+.transcript-btn:hover,
+.submit-btn:hover {
+    background: #000;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.popup-youtube {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+/*Signin Css*/
+.profile-img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 3px 29px #00000029;
+    margin-bottom: 15px;
+    border-radius: 60%;
+}
+
+.sign1-a {
+    font-size: 30px;
+    color: #262626;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sign-email {
+    width: 100%;
+    border: 1px solid #8F8F8F;
+    border-radius: 45px;
+    height: 70px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.sign1-b a {
+    color: #926F25;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sign1-b {
+    letter-spacing: -0.96px;
+    color: #262626;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.sign-btn {
+    width: 200px;
+    height: 70px;
+    background: #F9D27F 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 29px #0000002E;
+    border-radius: 43px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 10px;
+}
+
+.sign-1 form {
+    border-radius: 78px;
+    opacity: 1;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 60px 200px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background: url(../images/sign-in/bg2.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 1px solid #F9D27F;
+}
+
+.sign-1 {
+    padding: 100px 0;
+}
+
+.sign-main {
+    background: url(../images/sign-in/bg1.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: -90px;
+    padding-top: 50px;
+}
+
+.sign-email::placeholder {
+    color: #C8C6C6;
+    font-weight: 300;
+}
+
+/*Signin Css*/
+
+/*Transcript Css*/
+.transcript-1 {
+    background: url(../images/transcript/home-1.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.transcript1-a {
+    font-size: 36px;
+    letter-spacing: -1.6px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 5px;
+}
+
+.transcript1-b {
+    font-size: 70px;
+    letter-spacing: -3.2px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+.transcript-img {
+    width: 100%;
+}
+
+.transcript1-c {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.transcript1-d {
+    font-size: 14px;
+    color: #111111;
+    font-weight: 400;
+}
+
+.transcript1-btn {
+    text-decoration: none;
+    border-radius: 35px;
+    background: var(--yellow);
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    letter-spacing: -0.38px;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.img-box {
+    text-align: center;
+    padding: 10px 10px 30px 10px;
+    border: 1px solid var(--yellow);
+    border-radius: 25px;
+    width: 95%;
+    margin: 0 auto 50px auto;
+}
+
+.transcript-2 {
+    padding: 50px 0;
+}
+
+.transcriptinner1-a {
+    font-size: 14px;
+    letter-spacing: -0.32px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.transcriptinner1-b {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.transcriptinner1-c {
+    font-size: 18px;
+    font-weight: 400;
+    color: #11111180;
+}
+
+.transcriptinner2-p {
+    font-size: 16px;
+    color: #11111180;
+    font-weight: 400;
+}
+
+.transcriptinner-2 {
+    box-shadow: 0px 14px 30px #0000001A;
+    border: 1px solid #70707042;
+    border-radius: 40px;
+    padding: 30px 40px 20px 40px;
+    width: 90%;
+    margin: 0 auto 50px auto;
+}
+
+.transcriptinner-1 {
+    text-align: center;
+    padding: 50px 0 20px 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*Transcript Css*/
+
+/*Video Page Css*/
+.videomain1-a {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.videomain1-b {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 26px;
+}
+
+.videomain1-c {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.videomain1-d {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.videomain-ol li {
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.video-class {
+    width: 100%;
+}
+
+.video-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.video-main1 {
+    padding: 50px 0;
+}
+
+/*Video Page Css*/
+
+/*About Page Css*/
+.about-video {
+    position: sticky;
+    top: 30px;
+}
+
+.about1-img {
+    width: 66px;
+    height: 66px;
+}
+
+.about1-a {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.about1-b {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.about1-c {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about1-d {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.about1-e {
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.about1-f {
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.about1-g {
+    color: #111111;
+    font-size: 38px;
+    line-height: 42px;
+}
+
+.about1-g span {
+    font-weight: 900;
+}
+
+.blog-div-about {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px 15px;
+    align-items: baseline;
+}
+
+/*About Page Css*/
+
+/*Blog Inner Page Css*/
+.blog-inner1a {
+    font-size: 34px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.blog-inner1c {
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+}
+
+.blog-inner1b {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    margin-top: 30px;
+}
+
+section.blog-inner {
+    padding: 80px 100px;
+}
+
+/*Blog Inner Page Css*/
+/*Contact Page Css*/
+.input-class {
+    width: 100%;
+    height: 60px;
+    border-radius: 32px;
+    border: 1px solid #000;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.text-class {
+    width: 100%;
+    border-radius: 32px;
+    border: 1px solid #000;
+    padding: 15px;
+}
+
+.submit-class {
+    width: 180px;
+    border-radius: 32px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    background: var(--yellow);
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-1 {
+    padding: 80px 0;
+}
+
+.contact-1 form {
+    width: 70%;
+    margin: auto;
+}
+
+.map-div iframe {
+    width: 100%;
+    height: 400px;
+    margin-bottom: -7px;
+}
+
+/*Contact Page Css*/
+
+@media only screen and (max-width: 767px) {
+    .submit-btn {
+        font-size: 14px;
+        height: 55px;
+        width: 130px;
+    }
+
+    .footer-p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    #navbarOffcanvas {
+        text-align: left;
+        width: 80%;
+        background: #F9D27F !important;
+    }
+
+    .offcanvas-header .navbar-brand {
+        width: 60%;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .navbar-nav {
+        gap: 5px;
+    }
+
+    .sign-1 form {
+        padding: 40px 10px;
+        width: 95%;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sign1-a {
+        font-size: 15px;
+    }
+
+    .sign-email {
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .sign1-b {
+        letter-spacing: -0.5px;
+        font-size: 13px;
+    }
+
+    .sign-btn {
+        width: 150px;
+        height: 50px;
+        font-size: 12px;
+        margin-top: 0px;
+    }
+
+    .footer-h3 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .footer-h4 {
+        font-size: 14px;
+    }
+
+    .copyright-text {
+        font-size: 11px;
+    }
+}

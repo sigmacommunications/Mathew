@@ -1,0 +1,58 @@
+children dropdown-menu .btn-success {
+    color: #fff;
+    background-color: #f9d27f;
+    border-color: #f9d27f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #f9d27f;
+}
+
+a,
+button {
+    color: red;
+    text-decoration: none;
+    outline: none !important;
+    color: #f9d27f;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.breadcrumb-item.active {
+    color: #f9d27f;
+}
+
+footer.site-footer .footer-inner {
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 2.45em 1.125em;
+}
+
+.navbar .navbar-nav li.active .menu-icon,
+.navbar .navbar-nav li:hover .toggle_nav_button:before,
+.navbar .navbar-nav li .toggle_nav_button.nav-open:before {
+    color: black;
+}
+
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:focus,
+.navbar .navbar-nav>.active>a:hover {
+    color: black;
+}
+
+.navbar .navbar-nav li>a:hover,
+.navbar .navbar-nav li>a:hover .menu-icon {
+    color: #f9d27f;
+}
+
+.navbar .navbar-nav li.menu-item-has-children a:hover:before {
+    border-color: #f9d27f #f9d27f transparent transparent;
+}
