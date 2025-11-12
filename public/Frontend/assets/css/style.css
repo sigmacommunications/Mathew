@@ -9,6 +9,18 @@ body {
     width: 110px;
 }
 
+.foot-icon img {
+    width: 40px;
+}
+
+.foot-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
 .blogs-h1 {
     font-size: 30px;
     line-height: 40px;

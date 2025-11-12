@@ -34,8 +34,7 @@
                         <h6>Get in Touch</h6>
                         <li>Our Email<a class="blutxt" href="#">{{ $settings->email ?? null }}</a></li>
                         <li>Phone Number<a class="blutxt" href="#">{{ $settings->contact_no ?? null }}</a></li>
-                        <li>Office Address<a class="blutxt" href="#">734 Eli Locust Rd.
-							Washington, WV 26181</a></li>
+                        <li>Office Address<a class="blutxt" href="#">Compass Solutions LLC 9169 W State St#1366 Garden City, ID 83714</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 col-lg-3">

@@ -7,18 +7,18 @@
         <div class="owl-carousel owl-theme banner">
             <div class="item">
                 <div class="main-div">
-                    <h4 class="blue-head">contact us</h4>
+                    <!-- <h4 class="blue-head">contact us</h4> -->
                     <h1>Contact Us</h1>
                     <p>Discover effective strategies to manage loans, build savings, and plan for retirement.</p>
                     <div class="btn-div">
-						<a class="gs" href="tel:6815563569">Call: 6815563569</a>
-						<a class="gs" href="#">Get Started Now</a>
+						<a class="gs" href="tel:3042094280">Call: (304)209-4280</a>
+						<a class="gs" href="#contact">Email us</a>
 					</div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="sec9">
+    <section class="sec9" id="contact">
         <div class="container">
             <div class="row align-items-center">
 
@@ -42,24 +42,29 @@
                                     <input type="text" class="form-field" name="email" placeholder="Email" required>
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="">Contact No</label>
-                                    <input type="text" class="form-field" name="country_code" placeholder="Code"
+                                    <label for="">Phone Number</label>
+                                    <input type="text" class="form-field" name="country_code" placeholder="Area Code"
                                         required>
                                 </div>
                                 <div class="col-md-8">
                                     <label for=""></label>
-                                    <input type="text" class="form-field" name="contact_no" placeholder="Contact No"
+                                    <input type="text" class="form-field" name="contact_no" placeholder="Phone Number"
                                         required>
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="">Type</label>
-                                    <input type="text" class="form-field" name="type" placeholder="I am" required>
+                                    <label for="">Subject</label>
+                                    <select class="form-field">
+                                        <option value="budgeting">Budgeting</option>
+                                        <option value="debt">Debt</option>
+                                        <option value="savings">Savings</option>
+                                        <option value="insurance">Insurance</option>
+                                        <option value="estateplanning">Estate Planning</option>
+                                        <option value="other">Other</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="">Your Comment</label>
                                     <textarea name="comment" class="cmnt-field" placeholder="Enter Your message" id=""></textarea>
-                                    <input type="radio" id="wom" name="offer_msgs" value="Whatsapp Offer Messages.">
-                                    <label for="wom">Whatsapp Offer Messages.</label><br><br>
                                     <input class="sm" type="submit" value="Send Message">
                                 </div>
                             </div>
