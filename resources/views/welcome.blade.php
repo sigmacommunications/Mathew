@@ -8,23 +8,7 @@
             <div class="item">
                 <div class="main-div">
                     <h4 class="blue-head">Welcome to Compass Solution</h4>
-                    <h1>Top Financial Coaching Services by Mathew Skidmore</h1>
-                    <p>Take control of your finances and have a secure future with our specialized financial coaching. Whether you want to clear debt, plan for retirement, or create an emergency fund, our financial coaching empowers you to make the right decision at every stage.<b>Plan for tomorrow, and secure your wealth today!!</b></p>
-                    <a class="gs" href="{{ route('contact-us') }}">Book A Consultation</a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="main-div">
-                    <h4 class="blue-head">Welcome to Compass Solution</h4>
-                    <h1>Top Financial Coaching Services by Mathew Skidmore</h1>
-                    <p>Take control of your finances and have a secure future with our specialized financial coaching. Whether you want to clear debt, plan for retirement, or create an emergency fund, our financial coaching empowers you to make the right decision at every stage.<b>Plan for tomorrow, and secure your wealth today!!</b></p>
-                    <a class="gs" href="{{ route('contact-us') }}">Book A Consultation</a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="main-div">
-                    <h4 class="blue-head">Welcome to Compass Solution</h4>
-                    <h1>Top Financial Coaching Services by Mathew Skidmore</h1>
+                    <h1>Top Financial Coaching Services by Ward Skidmore</h1>
                     <p>Take control of your finances and have a secure future with our specialized financial coaching. Whether you want to clear debt, plan for retirement, or create an emergency fund, our financial coaching empowers you to make the right decision at every stage.<b>Plan for tomorrow, and secure your wealth today!!</b></p>
                     <a class="gs" href="{{ route('contact-us') }}">Book A Consultation</a>
                 </div>
@@ -72,7 +56,7 @@
                     <div class="cntntofsec3">
                         <h4 class="blue-head">About Company</h4>
                         <h2 class="blck-head">About Me/Us</h2>
-                        <p>Welcome to Compass Solutions! We will point you in the right direction. I’m Matthew Skidmore, your next financial coach, and my mission is to empower individuals and families to take control of their finances and transform their lives. <br><br>
+                        <p>Welcome to Compass Solutions! We will point you in the right direction. I’m Ward Skidmore, your next financial coach, and my mission is to empower individuals and families to take control of their finances and transform their lives. <br><br>
 I firmly believe that financial coaching is more than just numbers—it’s about creating a lasting impact. When you embrace and implement the strategies I and my team teach, you will experience the following:
 </p>
                         <div class="points">
@@ -409,29 +393,32 @@ Learn to manage loans, savings, and retirement effectively. We will always point
                                 </div>
                                 <div class="col-md-4">
                                     <label for="">Email</label>
-                                    <input type="text" class="form-field" name="email" placeholder="Email"
-                                        required>
+                                    <input type="text" class="form-field" name="email" placeholder="Email" required>
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="">Contact No</label>
-                                    <input type="text" class="form-field" name="country_code" placeholder="Code"
+                                    <label for="">Phone Number</label>
+                                    <input type="text" class="form-field" name="country_code" placeholder="Area Code"
                                         required>
                                 </div>
                                 <div class="col-md-8">
                                     <label for=""></label>
-                                    <input type="text" class="form-field" name="contact_no" placeholder="Contact No"
+                                    <input type="text" class="form-field" name="contact_no" placeholder="Phone Number"
                                         required>
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="">Type</label>
-                                    <input type="text" class="form-field" name="type" placeholder="I am" required>
+                                    <label for="">Subject</label>
+                                    <select class="form-field">
+                                        <option value="budgeting">Budgeting</option>
+                                        <option value="debt">Debt</option>
+                                        <option value="savings">Savings</option>
+                                        <option value="insurance">Insurance</option>
+                                        <option value="estateplanning">Estate Planning</option>
+                                        <option value="other">Other</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="">Your Comment</label>
                                     <textarea name="comment" class="cmnt-field" placeholder="Enter Your message" id=""></textarea>
-                                    <input type="radio" id="wom" name="offer_msgs"
-                                        value="Whatsapp Offer Messages.">
-                                    <label for="wom">Whatsapp Offer Messages.</label><br><br>
                                     <input class="sm" type="submit" value="Send Message">
                                 </div>
                             </div>

@@ -181,21 +181,19 @@
                 <div class="col-md-5 col-lg-3">
                     <ul class="footul">
                         <h6>Get in Touch</h6>
-                        <li>Our Email<a class="blutxt" href="#">{{ $settings->email ?? null }}</a></li>
-                        <li>Phone Number<a class="blutxt" href="#">{{ $settings->contact_no ?? null }}</a></li>
-                        <li>Office Address<a class="blutxt" href="#">734 Eli Locust Rd. 
-							Washington, WV 26181</a></li>
+                        <li>Our Email<a class="blutxt" href="{{ route('contact-us') }}/#contact">{{ $settings->email ?? null }}</a></li>
+                        <li>Fax<a class="blutxt" href="#">{{ $settings->contact_no ?? null }}</a></li>
+                        <li>Office Address<a class="blutxt" href="#">Compass Solutions LLC 9169 W State St#1366 Garden City, ID 83714</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 col-lg-3">
                     <ul class="footul">
-                        <h6>follow us</h6>
+                        <h6>Follow us</h6>
                         <div class="foot-icon">
-                            <a href="#"><img src="../../Frontend/assets/images/facebook.png"
+                            <a href="#"><img src="../../Frontend/assets/images/youtube.png"
                                     alt=""></a>
-                            <a href="#"><img src="../../Frontend/assets/images/instagram.png"
+                            <a href="#"><img src="../../Frontend/assets/images/linkedIn.png"
                                     alt=""></a>
-                            <a href="#"><img src="../../Frontend/assets/images/x.com.png" alt=""></a>
                         </div>
                     </ul>
                 </div>
@@ -205,7 +203,7 @@
                     <a href="./privacy-policy">Privacy Policy</a>
                     <a href="./terms-and-conditions">Terms and Conditions</a>
                 </div>
-                <p>{{ $settings->copyright ?? null }} © 2024. All Rights Reserved</p>
+                <p>{{ $settings->copyright ?? null }} © 2025. All Rights Reserved</p>
             </div>
         </div>
     </footer>
