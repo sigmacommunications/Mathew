@@ -66,15 +66,14 @@ class FrontendController extends Controller
             'email' => 'required|email|max:255',
             'country_code' => 'required|string|max:10',
             'contact_no' => 'required|string|max:15',
-            'type' => 'required|string|max:255',
+            'subject' => 'required|string|max:255',
             'comment' => 'nullable|string|max:1000',
-            'offer_msgs' => 'nullable|string|max:255'
-        ]);
+          ]);
         Contact::create([
             'name' => $request->name,
             'email' => $request->email,
             'phone' => $request->country_code . $request->contact_no,
-            'subject' => $request->type,
+            'subject' => $request->subject,
             'message' => $request->comment,
         ]);
         Mail::to($request->email)->send(new ContactMail($validatedData));

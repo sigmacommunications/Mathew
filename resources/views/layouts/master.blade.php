@@ -31,7 +31,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
     <link rel="stylesheet" href="{{ asset('Frontend/assets/css/style.css') }}">
-	<link rel="icon" type="image/x-icon" href="https://compasssolutionsllc.co/storage/logos/fav.png" />
+    <link rel="icon" type="image/x-icon" href="https://compasssolutionsllc.co/storage/logos/fav.png" />
     <title>@yield('title') | {{ $settings->site_name ?? 'Compass Solutions' }}</title>
 
     @stack('styles')
@@ -97,31 +97,31 @@
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li><a class="menu {{ request()->is('/') ? 'active' : '' }}"
-                                        href="{{ route('home') }}">Home</a>
-                                </li>
-                                <li><a class="menu {{ request()->is('about-us') ? 'active' : '' }}"
-                                        href="{{ route('about-us') }}">About Us</a></li>
-                                <li><a class="menu {{ request()->is('blog') ? 'active' : '' }}"
-                                        href="{{ route('blog') }}">Blog</a>
-                                </li>
-                                <li><a class="menu {{ request()->is('event') ? 'active' : '' }}"
-                                        href="{{ route('event') }}">Event</a>
-                                </li>
-                                <li><a class="menu {{ request()->is('/StudyMaterial') ? 'active' : '' }}"
-                                        href="{{ route('studymaterial') }}">Study
-                                        Material</a>
-                                </li>
-                                <li><a class="menu {{ request()->is('contact') ? 'active' : '' }}"
-                                        href="{{ route('contact-us') }}">Contact Us</a></li>
-                                <li><a class="menu {{ request()->is('privacy-policy') ? 'active' : '' }}"
-                                        href="{{ route('privacypolicy') }}">Privacy Policy</a></li>
-                                <li><a class="menu {{ request()->is('terms-and-conditions') ? 'active' : '' }}"
-                                        href="{{ route('termandcondition') }}">Terms & Conditions</a></li>
-									@auth
-                            <a class="loginbtn" href="{{ route('dashboard.redirect') }}">Dashboard</a>
-                        @else
-                            <a class="loginbtn" href="{{ route('login') }}">Login/Register</a>
-                        @endauth
+                                            href="{{ route('home') }}">Home</a>
+                                    </li>
+                                    <li><a class="menu {{ request()->is('about-us') ? 'active' : '' }}"
+                                            href="{{ route('about-us') }}">About Us</a></li>
+                                    <li><a class="menu {{ request()->is('blog') ? 'active' : '' }}"
+                                            href="{{ route('blog') }}">Blog</a>
+                                    </li>
+                                    <li><a class="menu {{ request()->is('event') ? 'active' : '' }}"
+                                            href="{{ route('event') }}">Event</a>
+                                    </li>
+                                    <li><a class="menu {{ request()->is('/StudyMaterial') ? 'active' : '' }}"
+                                            href="{{ route('studymaterial') }}">Study
+                                            Material</a>
+                                    </li>
+                                    <li><a class="menu {{ request()->is('contact') ? 'active' : '' }}"
+                                            href="{{ route('contact-us') }}">Contact Us</a></li>
+                                    <li><a class="menu {{ request()->is('privacy-policy') ? 'active' : '' }}"
+                                            href="{{ route('privacypolicy') }}">Privacy Policy</a></li>
+                                    <li><a class="menu {{ request()->is('terms-and-conditions') ? 'active' : '' }}"
+                                            href="{{ route('termandcondition') }}">Terms & Conditions</a></li>
+                                    @auth
+                                        <a class="loginbtn" href="{{ route('dashboard.redirect') }}">Dashboard</a>
+                                    @else
+                                        <a class="loginbtn" href="{{ route('login') }}">Login/Register</a>
+                                    @endauth
                                 </ul>
                             </div>
                         </div>
@@ -161,16 +161,16 @@
                         <p>{{ $settings->description }}</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-lg-3">
+                <div class="col-md-2 col-lg-4">
                     <ul class="footul">
                         <h6>Helpful Links</h6>
                         <li><a href="{{ route('about-us') }}">About Us</a></li>
                         <li><a href="{{ route('blog') }}">Blog</a></li>
                         <li><a href="{{ route('event') }}">Event</a></li>
-						<li><a href="{{ route('studymaterial') }}">Study Material</a></li>
+                        <li><a href="{{ route('studymaterial') }}">Study Material</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-lg-3">
+                <div class="col-md-3 col-lg-4">
                     <ul class="footul">
                         <h6>Support</h6>
                         <li><a href="{{ route('contact-us') }}">Contact Us</a></li>
@@ -178,23 +178,18 @@
                         <li><a href="{{ route('termandcondition') }}">Terms & Conditions</a></li>
                     </ul>
                 </div>
-                <div class="col-md-5 col-lg-3">
+                @php
+                    $num = $settings->contact_no ?? null;
+                    $formatted = '(' . substr($num, 0, 3) . ') ' . substr($num, 3, 3) . ' ' . substr($num, 6);
+                @endphp
+                <div class="col-md-5 col-lg-4">
                     <ul class="footul">
                         <h6>Get in Touch</h6>
-                        <li>Our Email<a class="blutxt" href="{{ route('contact-us') }}/#contact">{{ $settings->email ?? null }}</a></li>
-                        <li>Fax<a class="blutxt" href="#">{{ $settings->contact_no ?? null }}</a></li>
-                        <li>Office Address<a class="blutxt" href="#">Compass Solutions LLC 9169 W State St#1366 Garden City, ID 83714</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-lg-3">
-                    <ul class="footul">
-                        <h6>Follow us</h6>
-                        <div class="foot-icon">
-                            <a href="#"><img src="../../Frontend/assets/images/youtube.png"
-                                    alt=""></a>
-                            <a href="#"><img src="../../Frontend/assets/images/linkedIn.png"
-                                    alt=""></a>
-                        </div>
+                        <li>Our Email<a class="blutxt"
+                                href="{{ route('contact-us') }}/#contact">{{ $settings->email ?? null }}</a></li>
+                        <li>Phone Number<a class="blutxt" href="#">{{ $formatted ?? null }}</a></li>
+                        <li>Office Address<a class="blutxt" href="#">Compass Solutions LLC 9169 W State St#1366
+                                Garden City, ID 83714</a></li>
                     </ul>
                 </div>
             </div>
@@ -203,6 +198,7 @@
                     <a href="./privacy-policy">Privacy Policy</a>
                     <a href="./terms-and-conditions">Terms and Conditions</a>
                 </div>
+                <p>Fax: {{ $formatted }}</p>
                 <p>{{ $settings->copyright ?? null }} © 2025. All Rights Reserved</p>
             </div>
         </div>
